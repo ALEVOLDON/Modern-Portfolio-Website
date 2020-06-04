@@ -1,5 +1,9 @@
 $primary-color: #333;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: $primary-color;
   color: #fff;
