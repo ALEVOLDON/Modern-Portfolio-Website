@@ -1,19 +1,21 @@
+@use "config";
+
 // Widescreens
-@include mediaXl {
+@include config.mediaXl {
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 // Desktops & Laptops
-@include mediaLg {
+@include config.mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 // Tablets & Small Laptops
-@include mediaMd {
+@include config.mediaMd {
   main {
     align-items: center;
     text-align: center;
@@ -69,7 +71,7 @@
 }
 
 // Smartphones
-@include mediaSm {
+@include config.mediaSm {
   main {
     padding: 2rem;
     #home h1 {
